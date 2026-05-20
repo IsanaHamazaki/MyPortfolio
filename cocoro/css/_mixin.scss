@@ -1,0 +1,136 @@
+@mixin u-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 100px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+@mixin u-sectionHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
+}
+
+@mixin u-sectionTitle {
+  font-weight: 500;
+  font-size: 32px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+@mixin u-section {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+
+  @media screen and (max-width: 480px) {
+    gap: 30px;
+  }
+}
+
+@mixin u-sectionTop {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+@mixin u-sectionText {
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
+}
+
+@mixin u-sectionContents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+}
+
+@mixin u-sectionContents__image {
+  max-width: 640px;
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+@mixin u-sectionContents__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @media screen and (max-width: 480px) {
+    gap: 8px;
+  }
+}
+
+@mixin u-sectionContents__detailDate {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@mixin u-sectionContents__detailTitle {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@mixin u-sectionContents__detailText {
+  font-size: 15px;
+  letter-spacing: 0.06em;
+}
+
+@mixin u-sectionContentsBottom {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 24px;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@mixin u-sectionContentsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+@mixin u-sectionContentsItem__image {
+  width: 100%;
+}
+
+
+
+
+
+@mixin u-link {
+  padding: 14px 0;
+}
+@mixin u-link__text {
+  font-size: 16px;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  width: fit-content;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 20px;
+  }
+}
